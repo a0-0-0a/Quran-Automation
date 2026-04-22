@@ -1,0 +1,161 @@
+name: 🎬 Generate & Upload Quran Video
+
+# ─────────────────────────────────────────────────────────────────────────────
+# TRIGGERS
+# ─────────────────────────────────────────────────────────────────────────────
+on:
+  schedule:
+    # Runs every day at 06:00 UTC.
+    # Change this to whatever schedule you want:
+    #   '0 6 * * *'      = daily at 6 AM UTC
+    #   '0 6 * * 1,4'    = Monday and Thursday at 6 AM UTC
+    #   '0 6 */2 * *'    = every other day at 6 AM UTC
+    # Tip: avoid :00 minutes — GitHub queues are busy then. Use :15 or :30.
+    - cron: '15 6 * * *'
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# ─────────────────────────────────────────────────────────────────────────────
+# PERMISSIONS
+# write = needed so the job can commit sound_queue.json back to the repo
+# ─────────────────────────────────────────────────────────────────────────────
+permissions:
+  contents: write
+
+# ─────────────────────────────────────────────────────────────────────────────
+# JOBS
+# ─────────────────────────────────────────────────────────────────────────────
+jobs:
+  generate-and-upload:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180   # 3 hours max — adjust if your videos are very long
+
+    env:
+      # ── Backblaze B2 ─────────────────────────────────────────────────────
+      B2_AUTH_ID:         ${{ secrets.B2_AUTH_ID }}
+      B2_APPLICATION_KEY: ${{ secrets.B2_APPLICATION_KEY }}
+      B2_BUCKET_NAME:     main-one     # Change if your bucket has a different name
+
+      # ── YouTube OAuth ─────────────────────────────────────────────────────
+      YT_CLIENT_ID:       ${{ secrets.YT_CLIENT_ID }}
+      YT_CLIENT_SECRET:   ${{ secrets.YT_CLIENT_SECRET }}
+      YT_REFRESH_TOKEN:   ${{ secrets.YT_REFRESH_TOKEN }}
+
+      # ── Video upload settings ─────────────────────────────────────────────
+      YT_PRIVACY:         public       # public / unlisted / private
+      YT_CATEGORY_ID:     22           # 22 = People & Blogs. See YouTube category list.
+
+    steps:
+
+      # ── Free up disk space (GitHub runners ship with lots of pre-installed
+      #    software we don't need — freeing it gives us ~25 GB more room) ──
+      - name: 🧹 Free disk space
+        uses: jlumbroso/free-disk-space@main
+        with:
+          tool-cache:    false   # keep Python/pip cache — we need it
+          android:       true
+          dotnet:        true
+          haskell:       true
+          large-packages: true
+          docker-images: true
+          swap-storage:  false   # keep swap — helps if RAM gets tight
+
+      # ── Checkout the repository ──────────────────────────────────────────
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v4
+        with:
+          # Use a PAT if you want commits from this workflow to trigger other
+          # workflows.  The default GITHUB_TOKEN is fine here because we just
+          # need to push one file (sound_queue.json) back.
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # ── Python setup ─────────────────────────────────────────────────────
+      - name: 🐍 Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      # ── System dependencies ───────────────────────────────────────────────
+      # ffmpeg    : video encoding
+      # libcairo2-dev + libpango1.0-dev : required by cairosvg for SVG rendering
+      - name: 📦 Install system dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends \
+            ffmpeg \
+            libcairo2-dev \
+            libpango1.0-dev \
+            pkg-config \
+            python3-dev \
+            libffi-dev \
+            libglib2.0-0
+
+      # ── Python packages ───────────────────────────────────────────────────
+      - name: 📦 Install Python packages
+        run: |
+          pip install --upgrade pip
+          pip install \
+            cairosvg \
+            Pillow \
+            numpy \
+            tqdm \
+            requests \
+            google-auth \
+            google-auth-oauthlib \
+            google-api-python-client
+
+      # ── PRE-FLIGHT: verify B2 and YouTube before doing any real work ─────
+      - name: ✈️  Pre-flight checks (B2 + YouTube)
+        run: python scripts/preflight.py
+
+      # ── Select the next sound in sequential order ────────────────────────
+      # This step:
+      #   1. Connects to B2 and gets the current sounds list.
+      #   2. Syncs sound_queue.json with any additions/removals.
+      #   3. Picks the next unused sound (lowest number first).
+      #   4. Writes SELECTED_SOUND, SELECTED_SOUND_PATH, SOUND_BASE to $GITHUB_ENV.
+      #   5. Saves the updated sound_queue.json locally (committed at the end).
+      - name: 🎵 Select next sound
+        run: python scripts/sound_tracker.py select
+
+      # ── Download assets from Backblaze B2 ────────────────────────────────
+      # Downloads:
+      #   • sounds/<selected_sound>
+      #   • info/<sound_base>/  (all files in the matching info folder)
+      #   • images/<N_BG_IMAGES random images from the fixed list>
+      - name: ⬇️  Download assets from B2
+        run: python scripts/download_assets.py
+
+      # ── Generate video ────────────────────────────────────────────────────
+      # Runs the full render pipeline.
+      # Writes output/<sound>_<mode>_<timestamp>.mp4
+      # Also writes output/last_video.txt so the upload step knows the path.
+      - name: 🎬 Generate video
+        run: python scripts/run.py --sound "${{ env.SOUND_BASE }}"
+
+      # ── Upload to YouTube ─────────────────────────────────────────────────
+      # Picks a random title from info/<base>/titles.txt,
+      # detects language (Arabic / English),
+      # picks a matching description from SEO/descriptions/,
+      # and uploads the video.
+      - name: ⬆️  Upload to YouTube
+        run: python scripts/upload_youtube.py
+
+      # ── Commit the updated sound queue back to the repo ──────────────────
+      # This step runs ONLY if every previous step succeeded.
+      # If the workflow fails before this point, sound_queue.json stays
+      # unchanged in the repo, so the same sound will be retried next time.
+      - name: 💾 Commit updated sound queue
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name  "github-actions[bot]"
+          git add sound_queue.json
+          # Only commit if there are actual changes
+          if git diff --staged --quiet; then
+            echo "No changes to sound_queue.json — nothing to commit."
+          else
+            git commit -m "chore: update sound queue [skip ci]"
+            git push
+          fi
