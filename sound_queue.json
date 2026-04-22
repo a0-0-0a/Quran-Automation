@@ -1,4 +1,17 @@
 {
-  "sounds": [],
-  "last_updated": null
+  "sounds": [
+    {
+      "name": "sounds/1.mp3",
+      "used": true
+    },
+    {
+      "name": "sounds/2.wav",
+      "used": false
+    },
+    {
+      "name": "sounds/3.mp3",
+      "used": false
+    }
+  ],
+  "last_updated": "2026-04-22T00:37:35.827471+00:00"
 }
