@@ -19,12 +19,12 @@ OUT_DIR     = ROOT / "output"
 # ── VIDEO CORE ───────────────────────────────────────────────────────────────
 VIDEO_W     = 1080
 VIDEO_H     = 1920
-FPS         = 30
+FPS         = 65
 N_BG_IMAGES = 4
 
 # ── SVG TEXT RENDERING ───────────────────────────────────────────────────────
 # Render SVG at N× then Lanczos-downsample → ultra-sharp edges
-SVG_TEXT_SUPERSAMPLE = 3
+SVG_TEXT_SUPERSAMPLE = 5
 
 # ── BAR (dynamic opacity + animated gradient) ────────────────────────────────
 # Opacity range (0–1). Bar auto-adjusts to background luminance.
@@ -38,8 +38,8 @@ BAR_OPACITY_SMOOTH_SEC_DARK  = 9.0   # dark mode: slower, less jumpy
 BAR_GRAD_STRENGTH            = 0.10  # brightness lift at peak (0=off)
 BAR_GRAD_SPEED               = 0.15  # cycles/second (slow sweep)
 
-TRANSITION_SEC   = 1.0
-BAR_TIMING_MODE  = 1.0
+TRANSITION_SEC   = 3.0
+BAR_TIMING_MODE  = 0.0
 SVG_RENDER_SCALE = 5.0
 INTERNAL_OFFSET  = -8
 
@@ -106,7 +106,7 @@ DUST_BASE_SPEED         = 14       # px/s for fastest layer at speed_mult=1
 
 DUST_GLOBAL_OPACITY     = 1.0
 DUST_LAYER_OPACITIES    = [0.22, 0.40, 0.60, 0.80, 1.00]
-DUST_TOTAL              = 80
+DUST_TOTAL              = 100
 
 DUST_DEPTHS = [
     # (min_px, max_px, speed_mult, base_min_op, base_max_op)
