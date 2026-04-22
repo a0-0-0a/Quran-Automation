@@ -38,8 +38,8 @@ BAR_OPACITY_SMOOTH_SEC_DARK  = 9.0   # dark mode: slower, less jumpy
 BAR_GRAD_STRENGTH            = 0.10  # brightness lift at peak (0=off)
 BAR_GRAD_SPEED               = 0.15  # cycles/second (slow sweep)
 
-TRANSITION_SEC   = 3.0
-BAR_TIMING_MODE  = 0.0
+TRANSITION_SEC   = 1.5
+BAR_TIMING_MODE  = 0.5
 SVG_RENDER_SCALE = 5.0
 INTERNAL_OFFSET  = -8
 
