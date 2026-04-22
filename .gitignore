@@ -1,0 +1,31 @@
+# Downloaded assets (fetched fresh each run from B2)
+images/
+info/
+sounds/
+
+# Generated during render
+output/
+_temp_render/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.env
+venv/
+.venv/
+
+# Video files
+*.mp4
+*.mkv
+*.avi
+
+# IDE
+.vscode/
+.idea/
+*.swp
