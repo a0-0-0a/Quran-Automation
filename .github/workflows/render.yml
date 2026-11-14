@@ -1,0 +1,102 @@
+name: Render Quran Short
+
+on:
+  workflow_dispatch:
+    inputs:
+      range:
+        description: "Meaning-safe ayah range, e.g. 2:1-5 or 114:1-6"
+        required: true
+        default: "112:1-4"
+      reciter:
+        description: "Reciter folder (only yasser-al-dosarie has word timings)"
+        required: false
+        default: "yasser-al-dosarie"
+      texture:
+        description: "Texture folder under assets/textures (green_marble, Marble016, ...)"
+        required: false
+        default: "green_marble"
+      sfx:
+        description: "Background sound under assets/sfx (empty = none)"
+        required: false
+        default: "assets/sfx/dragon-studio-campfire-in-the-woods-467491.mp3"
+      fps:
+        description: "Frames per second"
+        required: false
+        default: "60"
+      width:
+        description: "Frame width"
+        required: false
+        default: "1080"
+      height:
+        description: "Frame height"
+        required: false
+        default: "1920"
+      crf:
+        description: "x264 CRF (lower = better quality)"
+        required: false
+        default: "12"
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    env:
+      RANGE: ${{ github.event.inputs.range || '112:1-4' }}
+      RECITER: ${{ github.event.inputs.reciter || 'yasser-al-dosarie' }}
+      TEXTURE: ${{ github.event.inputs.texture || 'green_marble' }}
+      SFX: ${{ github.event.inputs.sfx || 'assets/sfx/dragon-studio-campfire-in-the-woods-467491.mp3' }}
+      FPS: ${{ github.event.inputs.fps || '60' }}
+      WIDTH: ${{ github.event.inputs.width || '540' }}
+      HEIGHT: ${{ github.event.inputs.height || '960' }}
+      CRF: ${{ github.event.inputs.crf || '18' }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install ffmpeg
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+
+      - name: Cache cargo
+        uses: Swatinem/rust-cache@v2
+
+      - name: Build
+        run: cargo build --release
+
+      - name: Merge texture tiles (1K -> 4K)
+        run: python3 tools/merge_texture.py --dir "assets/textures/$TEXTURE"
+
+      - name: Fetch recitation (everyayah, B2 fallback)
+        run: |
+          python3 tools/fetch_audio.py \
+            --range "$RANGE" \
+            --reciter "$RECITER" \
+            --out "$RUNNER_TEMP/quran_audio"
+
+      - name: Render
+        run: |
+          SFX_ARG=""
+          if [ -n "$SFX" ]; then SFX_ARG="--sfx $SFX"; fi
+          ./target/release/lumen3d \
+            --range "$RANGE" \
+            --audio-dir "$RUNNER_TEMP/quran_audio" \
+            --work-dir "$RUNNER_TEMP/quran_work" \
+            --material "assets/textures/$TEXTURE/material.txt" \
+            $SFX_ARG \
+            --fps "$FPS" \
+            --w "$WIDTH" \
+            --h "$HEIGHT" \
+            --crf "$CRF" \
+            --threads 4 \
+            --out short.mp4
+
+      - name: Show result
+        run: ffprobe -v error -show_entries format=duration,size -of default=nw=1 short.mp4
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: quran-short-${{ github.run_id }}
+          path: short.mp4
+          if-no-files-found: error

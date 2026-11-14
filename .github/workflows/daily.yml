@@ -1,0 +1,72 @@
+name: Daily Quran Short
+
+on:
+  schedule:
+    - cron: "0 12 * * *"
+  workflow_dispatch:
+
+jobs:
+  daily:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    permissions:
+      contents: write
+    steps:
+      - name: Free disk space
+        uses: jlumbroso/free-disk-space@main
+        with:
+          tool-cache: false
+          android: true
+          dotnet: true
+          haskell: true
+          large-packages: true
+          docker-images: true
+          swap-storage: false
+
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Python deps
+        run: pip install -r requirements.txt
+
+      - name: Install ffmpeg
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+
+      - name: Cache cargo
+        uses: Swatinem/rust-cache@v2
+
+      - name: Build
+        run: cargo build --release
+
+      - name: Render + post the next short
+        env:
+          B2_AUTH_ID: ${{ secrets.B2_AUTH_ID || secrets.AWS_ACCESS_KEY_ID }}
+          B2_APP_KEY: ${{ secrets.B2_APPLICATION_KEY || secrets.B2_APP_KEY || secrets.AWS_SECRET_ACCESS_KEY }}
+          B2_BUCKET_NAME: ${{ secrets.B2_BUCKET_NAME || secrets.BUCKET_NAME || 'main-one' }}
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+          YT_PRIVACY: ${{ secrets.YT_PRIVACY || 'public' }}
+        run: python3 scripts/run_daily.py
+
+      - name: Clean temp
+        run: rm -rf work audio_cache assets/textures/*.zip
+
+      - name: Commit progress
+        run: |
+          git config user.name "quran-bot"
+          git config user.email "quran-bot@users.noreply.github.com"
+          git add state/progress.json
+          git diff --cached --quiet || git commit -m "state: next short"
+          git push
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: quran-short-${{ github.run_id }}
+          path: short.mp4
+          if-no-files-found: warn

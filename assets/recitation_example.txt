@@ -1,0 +1,8 @@
+# Recitation segments: one line per word, in reading order: start_seconds end_seconds
+# The camera follows the word being recited and glides to the next one
+# (local1 smooth_damp, 1.5 s smoothing, 0.9 s lead).
+# Replace with the real timings later:  lumen3d --segments assets/recitation_example.txt
+0.00 0.67
+0.67 1.33
+1.33 2.00
+2.00 2.67

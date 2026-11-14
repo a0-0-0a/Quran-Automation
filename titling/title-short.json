@@ -1,0 +1,53 @@
+{
+  "single_ayah": [
+    "{reciter} | سورة {surah} | الآية {ayah}",
+    "سورة {surah} | الآية {ayah} | بصوت {reciter}",
+    "الآية {ayah} من سورة {surah} بصوت {reciter}",
+    "{reciter} يتلو الآية {ayah} من سورة {surah}",
+    "استمع إلى الآية {ayah} من سورة {surah} | {reciter}",
+    "سكينة القلب | سورة {surah} | الآية {ayah} | {reciter}",
+    "تلاوة تريح القلب | الآية {ayah} من سورة {surah} | {reciter}",
+    "قبسات من سورة {surah} | الآية {ayah} | {reciter}",
+    "تدبّر | سورة {surah} | الآية {ayah} | بصوت {reciter}",
+    "سورة {surah} ({ayah}) | تلاوة {reciter}",
+    "من تلاوات {reciter} | سورة {surah} | الآية {ayah}",
+    "ما تيسّر من سورة {surah} | الآية {ayah} | {reciter}",
+    "آيات من القرآن الكريم | سورة {surah} | الآية {ayah} | {reciter}",
+    "من أجمل ما سمعت | الآية {ayah} من سورة {surah} | {reciter}",
+    "راحة نفسية | سورة {surah} | الآية {ayah} | {reciter}"
+  ],
+  "two_ayahs": [
+    "{reciter} | سورة {surah} | الآيتان {ayah}",
+    "سورة {surah} | الآيتان {ayah} | بصوت {reciter}",
+    "الآيتان {ayah} من سورة {surah} بصوت {reciter}",
+    "{reciter} يتلو الآيتين {ayah} من سورة {surah}",
+    "استمع إلى الآيتين {ayah} من سورة {surah} | {reciter}",
+    "سكينة القلب | سورة {surah} | الآيتان {ayah} | {reciter}",
+    "تلاوة تريح القلب | الآيتان {ayah} من سورة {surah} | {reciter}",
+    "قبسات من سورة {surah} | الآيتان {ayah} | {reciter}",
+    "تدبّر | سورة {surah} | الآيتان {ayah} | بصوت {reciter}",
+    "سورة {surah} ({ayah}) | تلاوة {reciter}",
+    "من تلاوات {reciter} | سورة {surah} | الآيتان {ayah}",
+    "ما تيسّر من سورة {surah} | الآيتان {ayah} | {reciter}",
+    "آيات من القرآن الكريم | سورة {surah} | الآيتان {ayah} | {reciter}",
+    "من أجمل ما سمعت | الآيتان {ayah} من سورة {surah} | {reciter}",
+    "راحة نفسية | سورة {surah} | الآيتان {ayah} | {reciter}"
+  ],
+  "multiple_ayahs": [
+    "{reciter} | سورة {surah} | الآيات {ayah}",
+    "سورة {surah} | الآيات {ayah} | بصوت {reciter}",
+    "الآيات {ayah} من سورة {surah} بصوت {reciter}",
+    "{reciter} يتلو الآيات {ayah} من سورة {surah}",
+    "استمع إلى الآيات {ayah} من سورة {surah} | {reciter}",
+    "سكينة القلب | سورة {surah} | الآيات {ayah} | {reciter}",
+    "تلاوة تريح القلب | الآيات {ayah} من سورة {surah} | {reciter}",
+    "قبسات من سورة {surah} | الآيات {ayah} | {reciter}",
+    "تدبّر | سورة {surah} | الآيات {ayah} | بصوت {reciter}",
+    "سورة {surah} ({ayah}) | تلاوة {reciter}",
+    "من تلاوات {reciter} | سورة {surah} | الآيات {ayah}",
+    "ما تيسّر من سورة {surah} | الآيات {ayah} | {reciter}",
+    "آيات من القرآن الكريم | سورة {surah} | الآيات {ayah} | {reciter}",
+    "من أجمل ما سمعت | الآيات {ayah} من سورة {surah} | {reciter}",
+    "راحة نفسية | سورة {surah} | الآيات {ayah} | {reciter}"
+  ]
+}

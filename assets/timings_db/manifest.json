@@ -1,0 +1,86 @@
+{
+  "Yasser_Ad-Dussary": {
+    "source": "local",
+    "ayahs": 6236,
+    "per_word_ayahs": 6236,
+    "ayah_only_ayahs": 0,
+    "everyayah_zip": "Yasser_Ad-Dussary_128kbps.zip"
+  },
+  "Abdullaah_3awwaad_Al-Juhaynee": {
+    "source": "qta_abdullaah",
+    "ayahs": 6236,
+    "per_word_ayahs": 48,
+    "ayah_only_ayahs": 6188,
+    "everyayah_zip": "Abdullaah_3awwaad_Al-Juhaynee_128kbps.zip"
+  },
+  "Abdurrahmaan_As-Sudais": {
+    "source": "qalign_abdurrahmaan",
+    "ayahs": 6236,
+    "per_word_ayahs": 6225,
+    "ayah_only_ayahs": 11,
+    "everyayah_zip": "Sudais.zip"
+  },
+  "Ahmed_Neana": {
+    "source": "ayah",
+    "ayahs": 6236,
+    "per_word_ayahs": 0,
+    "ayah_only_ayahs": 6236,
+    "everyayah_zip": "Ahmed_Neana_128kbps.zip"
+  },
+  "Ali_Hajjaj_AlSuesy": {
+    "source": "ayah",
+    "ayahs": 6236,
+    "per_word_ayahs": 0,
+    "ayah_only_ayahs": 6236,
+    "everyayah_zip": "Ali_Hajjaj_AlSuesy_128kbps.zip"
+  },
+  "Aziz_Alili": {
+    "source": "ayah",
+    "ayahs": 6236,
+    "per_word_ayahs": 0,
+    "ayah_only_ayahs": 6236,
+    "everyayah_zip": "Aziz_Alili_128kbps.zip"
+  },
+  "Minshawy_Murattal": {
+    "source": "qalign_minshawy",
+    "ayahs": 6236,
+    "per_word_ayahs": 6221,
+    "ayah_only_ayahs": 15,
+    "everyayah_zip": "Minshawy Murattal.zip"
+  },
+  "Muhsin_Al_Qasim": {
+    "source": "qta_muhsin",
+    "ayahs": 6236,
+    "per_word_ayahs": 1018,
+    "ayah_only_ayahs": 5218,
+    "everyayah_zip": "Muhsin Al-Qasim_192kbps.zip"
+  },
+  "Nasser_Alqatami": {
+    "source": "ayah",
+    "ayahs": 6236,
+    "per_word_ayahs": 0,
+    "ayah_only_ayahs": 6236,
+    "everyayah_zip": "Nasser_Alqatami_128kbps.zip"
+  },
+  "Sahl_Yassin": {
+    "source": "ayah",
+    "ayahs": 6236,
+    "per_word_ayahs": 0,
+    "ayah_only_ayahs": 6236,
+    "everyayah_zip": "Sahl_Yassin_128kbps.zip"
+  },
+  "Salah_Al_Budair": {
+    "source": "ayah",
+    "ayahs": 6236,
+    "per_word_ayahs": 0,
+    "ayah_only_ayahs": 6236,
+    "everyayah_zip": "Salah_al_Budair_128kbps.zip"
+  },
+  "Saood_ash-Shuraym": {
+    "source": "qalign_saood",
+    "ayahs": 6236,
+    "per_word_ayahs": 6225,
+    "ayah_only_ayahs": 11,
+    "everyayah_zip": "Saud Ash Shuraym.zip"
+  }
+}

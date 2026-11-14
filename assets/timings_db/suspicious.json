@@ -1,0 +1,1133 @@
+[
+  {
+    "reciter": "Abdullaah_3awwaad_Al-Juhaynee",
+    "surah": 4,
+    "ayah": 174,
+    "issue": "missing ayah duration (filled)",
+    "detail": "zip one short"
+  },
+  {
+    "reciter": "Abdullaah_3awwaad_Al-Juhaynee",
+    "surah": 4,
+    "ayah": 170,
+    "issue": "missing ayah duration (filled)",
+    "detail": "zip one short"
+  },
+  {
+    "reciter": "Abdullaah_3awwaad_Al-Juhaynee",
+    "surah": 4,
+    "ayah": 167,
+    "issue": "missing ayah duration (filled)",
+    "detail": "zip one short"
+  },
+  {
+    "reciter": "Abdullaah_3awwaad_Al-Juhaynee",
+    "surah": 4,
+    "ayah": 173,
+    "issue": "missing ayah duration (filled)",
+    "detail": "zip one short"
+  },
+  {
+    "reciter": "Abdullaah_3awwaad_Al-Juhaynee",
+    "surah": 4,
+    "ayah": 176,
+    "issue": "missing ayah duration (filled)",
+    "detail": "zip one short"
+  },
+  {
+    "reciter": "Abdullaah_3awwaad_Al-Juhaynee",
+    "surah": 4,
+    "ayah": 169,
+    "issue": "missing ayah duration (filled)",
+    "detail": "zip one short"
+  },
+  {
+    "reciter": "Abdullaah_3awwaad_Al-Juhaynee",
+    "surah": 4,
+    "ayah": 175,
+    "issue": "missing ayah duration (filled)",
+    "detail": "zip one short"
+  },
+  {
+    "reciter": "Abdullaah_3awwaad_Al-Juhaynee",
+    "surah": 4,
+    "ayah": 172,
+    "issue": "missing ayah duration (filled)",
+    "detail": "zip one short"
+  },
+  {
+    "reciter": "Abdullaah_3awwaad_Al-Juhaynee",
+    "surah": 4,
+    "ayah": 168,
+    "issue": "missing ayah duration (filled)",
+    "detail": "zip one short"
+  },
+  {
+    "reciter": "Abdullaah_3awwaad_Al-Juhaynee",
+    "surah": 4,
+    "ayah": 171,
+    "issue": "missing ayah duration (filled)",
+    "detail": "zip one short"
+  },
+  {
+    "reciter": "Abdurrahmaan_As-Sudais",
+    "surah": 2,
+    "ayah": 14,
+    "issue": "word count mismatch",
+    "detail": "15 vs text 16"
+  },
+  {
+    "reciter": "Abdurrahmaan_As-Sudais",
+    "surah": 2,
+    "ayah": 181,
+    "issue": "word count mismatch",
+    "detail": "13 vs text 14"
+  },
+  {
+    "reciter": "Abdurrahmaan_As-Sudais",
+    "surah": 2,
+    "ayah": 278,
+    "issue": "word count mismatch",
+    "detail": "12 vs text 13"
+  },
+  {
+    "reciter": "Abdurrahmaan_As-Sudais",
+    "surah": 3,
+    "ayah": 153,
+    "issue": "word outside ayah",
+    "detail": [
+      [
+        15240.0,
+        15230.0
+      ]
+    ]
+  },
+  {
+    "reciter": "Abdurrahmaan_As-Sudais",
+    "surah": 3,
+    "ayah": 154,
+    "issue": "word outside ayah",
+    "detail": [
+      [
+        42930.0,
+        42830.0
+      ]
+    ]
+  },
+  {
+    "reciter": "Abdurrahmaan_As-Sudais",
+    "surah": 5,
+    "ayah": 95,
+    "issue": "word count mismatch",
+    "detail": "49 vs text 50"
+  },
+  {
+    "reciter": "Abdurrahmaan_As-Sudais",
+    "surah": 7,
+    "ayah": 89,
+    "issue": "word outside ayah",
+    "detail": [
+      [
+        10590.0,
+        10580.0
+      ]
+    ]
+  },
+  {
+    "reciter": "Abdurrahmaan_As-Sudais",
+    "surah": 7,
+    "ayah": 189,
+    "issue": "word outside ayah",
+    "detail": [
+      [
+        2540.0,
+        2530.0
+      ]
+    ]
+  },
+  {
+    "reciter": "Abdurrahmaan_As-Sudais",
+    "surah": 8,
+    "ayah": 6,
+    "issue": "word count mismatch",
+    "detail": "11 vs text 12"
+  },
+  {
+    "reciter": "Abdurrahmaan_As-Sudais",
+    "surah": 8,
+    "ayah": 72,
+    "issue": "word outside ayah",
+    "detail": [
+      [
+        23670.0,
+        23660.0
+      ]
+    ]
+  },
+  {
+    "reciter": "Abdurrahmaan_As-Sudais",
+    "surah": 10,
+    "ayah": 49,
+    "issue": "word count mismatch",
+    "detail": "21 vs text 22"
+  },
+  {
+    "reciter": "Abdurrahmaan_As-Sudais",
+    "surah": 12,
+    "ayah": 75,
+    "issue": "word outside ayah",
+    "detail": [
+      [
+        2950.0,
+        2930.0
+      ]
+    ]
+  },
+  {
+    "reciter": "Abdurrahmaan_As-Sudais",
+    "surah": 12,
+    "ayah": 79,
+    "issue": "word outside ayah",
+    "detail": [
+      [
+        5300.0,
+        5290.0
+      ]
+    ]
+  },
+  {
+    "reciter": "Abdurrahmaan_As-Sudais",
+    "surah": 13,
+    "ayah": 37,
+    "issue": "word count mismatch",
+    "detail": "19 vs text 20"
+  },
+  {
+    "reciter": "Abdurrahmaan_As-Sudais",
+    "surah": 14,
+    "ayah": 31,
+    "issue": "word outside ayah",
+    "detail": [
+      [
+        40.0,
+        30.0
+      ]
+    ]
+  },
+  {
+    "reciter": "Abdurrahmaan_As-Sudais",
+    "surah": 16,
+    "ayah": 37,
+    "issue": "word outside ayah",
+    "detail": [
+      [
+        8590.0,
+        8580.0
+      ]
+    ]
+  },
+  {
+    "reciter": "Abdurrahmaan_As-Sudais",
+    "surah": 20,
+    "ayah": 65,
+    "issue": "word outside ayah",
+    "detail": [
+      [
+        5040.0,
+        5030.0
+      ]
+    ]
+  },
+  {
+    "reciter": "Abdurrahmaan_As-Sudais",
+    "surah": 21,
+    "ayah": 39,
+    "issue": "word outside ayah",
+    "detail": [
+      [
+        4280.0,
+        4230.0
+      ]
+    ]
+  },
+  {
+    "reciter": "Abdurrahmaan_As-Sudais",
+    "surah": 25,
+    "ayah": 12,
+    "issue": "word outside ayah",
+    "detail": [
+      [
+        2000.0,
+        1990.0
+      ]
+    ]
+  },
+  {
+    "reciter": "Abdurrahmaan_As-Sudais",
+    "surah": 27,
+    "ayah": 39,
+    "issue": "word outside ayah",
+    "detail": [
+      [
+        6530.0,
+        6520.0
+      ]
+    ]
+  },
+  {
+    "reciter": "Abdurrahmaan_As-Sudais",
+    "surah": 30,
+    "ayah": 29,
+    "issue": "word outside ayah",
+    "detail": [
+      [
+        9940.0,
+        9930.0
+      ]
+    ]
+  },
+  {
+    "reciter": "Abdurrahmaan_As-Sudais",
+    "surah": 39,
+    "ayah": 6,
+    "issue": "word outside ayah",
+    "detail": [
+      [
+        1450.0,
+        1440.0
+      ]
+    ]
+  },
+  {
+    "reciter": "Abdurrahmaan_As-Sudais",
+    "surah": 42,
+    "ayah": 10,
+    "issue": "word count mismatch",
+    "detail": "14 vs text 15"
+  },
+  {
+    "reciter": "Abdurrahmaan_As-Sudais",
+    "surah": 45,
+    "ayah": 10,
+    "issue": "word count mismatch",
+    "detail": "18 vs text 19"
+  },
+  {
+    "reciter": "Abdurrahmaan_As-Sudais",
+    "surah": 68,
+    "ayah": 1,
+    "issue": "word count mismatch",
+    "detail": "2 vs text 4"
+  },
+  {
+    "reciter": "Abdurrahmaan_As-Sudais",
+    "surah": 77,
+    "ayah": 27,
+    "issue": "word count mismatch",
+    "detail": "6 vs text 7"
+  },
+  {
+    "reciter": "Minshawy_Murattal",
+    "surah": 2,
+    "ayah": 181,
+    "issue": "word count mismatch",
+    "detail": "13 vs text 14"
+  },
+  {
+    "reciter": "Minshawy_Murattal",
+    "surah": 2,
+    "ayah": 182,
+    "issue": "word outside ayah",
+    "detail": [
+      [
+        3150.0,
+        3080.0
+      ]
+    ]
+  },
+  {
+    "reciter": "Minshawy_Murattal",
+    "surah": 3,
+    "ayah": 28,
+    "issue": "word count mismatch",
+    "detail": "26 vs text 27"
+  },
+  {
+    "reciter": "Minshawy_Murattal",
+    "surah": 5,
+    "ayah": 36,
+    "issue": "word count mismatch",
+    "detail": "23 vs text 24"
+  },
+  {
+    "reciter": "Minshawy_Murattal",
+    "surah": 5,
+    "ayah": 116,
+    "issue": "word count mismatch",
+    "detail": "43 vs text 44"
+  },
+  {
+    "reciter": "Minshawy_Murattal",
+    "surah": 6,
+    "ayah": 19,
+    "issue": "word outside ayah",
+    "detail": [
+      [
+        30650.0,
+        30500.0
+      ]
+    ]
+  },
+  {
+    "reciter": "Minshawy_Murattal",
+    "surah": 6,
+    "ayah": 58,
+    "issue": "word outside ayah",
+    "detail": [
+      [
+        600.0,
+        50.0
+      ]
+    ]
+  },
+  {
+    "reciter": "Minshawy_Murattal",
+    "surah": 6,
+    "ayah": 76,
+    "issue": "word outside ayah",
+    "detail": [
+      [
+        15590.0,
+        15580.0
+      ]
+    ]
+  },
+  {
+    "reciter": "Minshawy_Murattal",
+    "surah": 8,
+    "ayah": 6,
+    "issue": "word count mismatch",
+    "detail": "11 vs text 12"
+  },
+  {
+    "reciter": "Minshawy_Murattal",
+    "surah": 13,
+    "ayah": 37,
+    "issue": "word count mismatch",
+    "detail": "19 vs text 20"
+  },
+  {
+    "reciter": "Minshawy_Murattal",
+    "surah": 15,
+    "ayah": 22,
+    "issue": "word count mismatch",
+    "detail": "11 vs text 12"
+  },
+  {
+    "reciter": "Minshawy_Murattal",
+    "surah": 17,
+    "ayah": 100,
+    "issue": "word outside ayah",
+    "detail": [
+      [
+        400.0,
+        50.0
+      ]
+    ]
+  },
+  {
+    "reciter": "Minshawy_Murattal",
+    "surah": 20,
+    "ayah": 18,
+    "issue": "word count mismatch",
+    "detail": "12 vs text 13"
+  },
+  {
+    "reciter": "Minshawy_Murattal",
+    "surah": 20,
+    "ayah": 135,
+    "issue": "word outside ayah",
+    "detail": [
+      [
+        1660.0,
+        1630.0
+      ]
+    ]
+  },
+  {
+    "reciter": "Minshawy_Murattal",
+    "surah": 22,
+    "ayah": 41,
+    "issue": "word outside ayah",
+    "detail": [
+      [
+        2230.0,
+        2180.0
+      ]
+    ]
+  },
+  {
+    "reciter": "Minshawy_Murattal",
+    "surah": 25,
+    "ayah": 12,
+    "issue": "word outside ayah",
+    "detail": [
+      [
+        2720.0,
+        2710.0
+      ]
+    ]
+  },
+  {
+    "reciter": "Minshawy_Murattal",
+    "surah": 26,
+    "ayah": 63,
+    "issue": "word count mismatch",
+    "detail": "12 vs text 13"
+  },
+  {
+    "reciter": "Minshawy_Murattal",
+    "surah": 28,
+    "ayah": 27,
+    "issue": "word count mismatch",
+    "detail": "28 vs text 29"
+  },
+  {
+    "reciter": "Minshawy_Murattal",
+    "surah": 28,
+    "ayah": 79,
+    "issue": "word outside ayah",
+    "detail": [
+      [
+        12560.0,
+        12530.0
+      ]
+    ]
+  },
+  {
+    "reciter": "Minshawy_Murattal",
+    "surah": 34,
+    "ayah": 30,
+    "issue": "word outside ayah",
+    "detail": [
+      [
+        500.0,
+        50.0
+      ]
+    ]
+  },
+  {
+    "reciter": "Minshawy_Murattal",
+    "surah": 44,
+    "ayah": 8,
+    "issue": "word outside ayah",
+    "detail": [
+      [
+        600.0,
+        50.0
+      ]
+    ]
+  },
+  {
+    "reciter": "Minshawy_Murattal",
+    "surah": 46,
+    "ayah": 14,
+    "issue": "word count mismatch",
+    "detail": "6 vs text 9"
+  },
+  {
+    "reciter": "Minshawy_Murattal",
+    "surah": 56,
+    "ayah": 52,
+    "issue": "word count mismatch",
+    "detail": "4 vs text 5"
+  },
+  {
+    "reciter": "Minshawy_Murattal",
+    "surah": 68,
+    "ayah": 22,
+    "issue": "word count mismatch",
+    "detail": "6 vs text 7"
+  },
+  {
+    "reciter": "Minshawy_Murattal",
+    "surah": 81,
+    "ayah": 21,
+    "issue": "word count mismatch",
+    "detail": "1 vs text 3"
+  },
+  {
+    "reciter": "Minshawy_Murattal",
+    "surah": 105,
+    "ayah": 4,
+    "issue": "word count mismatch",
+    "detail": "3 vs text 4"
+  },
+  {
+    "reciter": "Muhsin_Al_Qasim",
+    "surah": 4,
+    "ayah": 174,
+    "issue": "missing ayah duration (filled)",
+    "detail": "zip one short"
+  },
+  {
+    "reciter": "Muhsin_Al_Qasim",
+    "surah": 27,
+    "ayah": 83,
+    "issue": "missing ayah duration (filled)",
+    "detail": "zip one short"
+  },
+  {
+    "reciter": "Muhsin_Al_Qasim",
+    "surah": 27,
+    "ayah": 89,
+    "issue": "missing ayah duration (filled)",
+    "detail": "zip one short"
+  },
+  {
+    "reciter": "Muhsin_Al_Qasim",
+    "surah": 27,
+    "ayah": 86,
+    "issue": "missing ayah duration (filled)",
+    "detail": "zip one short"
+  },
+  {
+    "reciter": "Muhsin_Al_Qasim",
+    "surah": 27,
+    "ayah": 92,
+    "issue": "missing ayah duration (filled)",
+    "detail": "zip one short"
+  },
+  {
+    "reciter": "Muhsin_Al_Qasim",
+    "surah": 4,
+    "ayah": 170,
+    "issue": "missing ayah duration (filled)",
+    "detail": "zip one short"
+  },
+  {
+    "reciter": "Muhsin_Al_Qasim",
+    "surah": 4,
+    "ayah": 167,
+    "issue": "missing ayah duration (filled)",
+    "detail": "zip one short"
+  },
+  {
+    "reciter": "Muhsin_Al_Qasim",
+    "surah": 4,
+    "ayah": 173,
+    "issue": "missing ayah duration (filled)",
+    "detail": "zip one short"
+  },
+  {
+    "reciter": "Muhsin_Al_Qasim",
+    "surah": 4,
+    "ayah": 176,
+    "issue": "missing ayah duration (filled)",
+    "detail": "zip one short"
+  },
+  {
+    "reciter": "Muhsin_Al_Qasim",
+    "surah": 27,
+    "ayah": 85,
+    "issue": "missing ayah duration (filled)",
+    "detail": "zip one short"
+  },
+  {
+    "reciter": "Muhsin_Al_Qasim",
+    "surah": 27,
+    "ayah": 91,
+    "issue": "missing ayah duration (filled)",
+    "detail": "zip one short"
+  },
+  {
+    "reciter": "Muhsin_Al_Qasim",
+    "surah": 27,
+    "ayah": 88,
+    "issue": "missing ayah duration (filled)",
+    "detail": "zip one short"
+  },
+  {
+    "reciter": "Muhsin_Al_Qasim",
+    "surah": 4,
+    "ayah": 166,
+    "issue": "missing ayah duration (filled)",
+    "detail": "zip one short"
+  },
+  {
+    "reciter": "Muhsin_Al_Qasim",
+    "surah": 4,
+    "ayah": 169,
+    "issue": "missing ayah duration (filled)",
+    "detail": "zip one short"
+  },
+  {
+    "reciter": "Muhsin_Al_Qasim",
+    "surah": 4,
+    "ayah": 175,
+    "issue": "missing ayah duration (filled)",
+    "detail": "zip one short"
+  },
+  {
+    "reciter": "Muhsin_Al_Qasim",
+    "surah": 4,
+    "ayah": 172,
+    "issue": "missing ayah duration (filled)",
+    "detail": "zip one short"
+  },
+  {
+    "reciter": "Muhsin_Al_Qasim",
+    "surah": 27,
+    "ayah": 84,
+    "issue": "missing ayah duration (filled)",
+    "detail": "zip one short"
+  },
+  {
+    "reciter": "Muhsin_Al_Qasim",
+    "surah": 27,
+    "ayah": 87,
+    "issue": "missing ayah duration (filled)",
+    "detail": "zip one short"
+  },
+  {
+    "reciter": "Muhsin_Al_Qasim",
+    "surah": 27,
+    "ayah": 90,
+    "issue": "missing ayah duration (filled)",
+    "detail": "zip one short"
+  },
+  {
+    "reciter": "Muhsin_Al_Qasim",
+    "surah": 27,
+    "ayah": 93,
+    "issue": "missing ayah duration (filled)",
+    "detail": "zip one short"
+  },
+  {
+    "reciter": "Muhsin_Al_Qasim",
+    "surah": 4,
+    "ayah": 168,
+    "issue": "missing ayah duration (filled)",
+    "detail": "zip one short"
+  },
+  {
+    "reciter": "Muhsin_Al_Qasim",
+    "surah": 4,
+    "ayah": 171,
+    "issue": "missing ayah duration (filled)",
+    "detail": "zip one short"
+  },
+  {
+    "reciter": "Muhsin_Al_Qasim",
+    "surah": 67,
+    "ayah": 19,
+    "issue": "word count mismatch",
+    "detail": "16 vs text 15"
+  },
+  {
+    "reciter": "Saood_ash-Shuraym",
+    "surah": 2,
+    "ayah": 181,
+    "issue": "word count mismatch",
+    "detail": "13 vs text 14"
+  },
+  {
+    "reciter": "Saood_ash-Shuraym",
+    "surah": 2,
+    "ayah": 240,
+    "issue": "word outside ayah",
+    "detail": [
+      [
+        16440.0,
+        16430.0
+      ]
+    ]
+  },
+  {
+    "reciter": "Saood_ash-Shuraym",
+    "surah": 2,
+    "ayah": 270,
+    "issue": "word outside ayah",
+    "detail": [
+      [
+        2100.0,
+        2090.0
+      ]
+    ]
+  },
+  {
+    "reciter": "Saood_ash-Shuraym",
+    "surah": 2,
+    "ayah": 286,
+    "issue": "word outside ayah",
+    "detail": [
+      [
+        9890.0,
+        9880.0
+      ]
+    ]
+  },
+  {
+    "reciter": "Saood_ash-Shuraym",
+    "surah": 3,
+    "ayah": 124,
+    "issue": "word count mismatch",
+    "detail": "12 vs text 13"
+  },
+  {
+    "reciter": "Saood_ash-Shuraym",
+    "surah": 8,
+    "ayah": 6,
+    "issue": "word count mismatch",
+    "detail": "11 vs text 12"
+  },
+  {
+    "reciter": "Saood_ash-Shuraym",
+    "surah": 10,
+    "ayah": 49,
+    "issue": "word outside ayah",
+    "detail": [
+      [
+        70.0,
+        30.0
+      ]
+    ]
+  },
+  {
+    "reciter": "Saood_ash-Shuraym",
+    "surah": 10,
+    "ayah": 59,
+    "issue": "word outside ayah",
+    "detail": [
+      [
+        1660.0,
+        1650.0
+      ]
+    ]
+  },
+  {
+    "reciter": "Saood_ash-Shuraym",
+    "surah": 11,
+    "ayah": 54,
+    "issue": "word outside ayah",
+    "detail": [
+      [
+        70.0,
+        30.0
+      ]
+    ]
+  },
+  {
+    "reciter": "Saood_ash-Shuraym",
+    "surah": 11,
+    "ayah": 62,
+    "issue": "word outside ayah",
+    "detail": [
+      [
+        7140.0,
+        7130.0
+      ]
+    ]
+  },
+  {
+    "reciter": "Saood_ash-Shuraym",
+    "surah": 12,
+    "ayah": 53,
+    "issue": "word count mismatch",
+    "detail": "14 vs text 15"
+  },
+  {
+    "reciter": "Saood_ash-Shuraym",
+    "surah": 13,
+    "ayah": 37,
+    "issue": "word count mismatch",
+    "detail": "19 vs text 20"
+  },
+  {
+    "reciter": "Saood_ash-Shuraym",
+    "surah": 14,
+    "ayah": 11,
+    "issue": "word outside ayah",
+    "detail": [
+      [
+        13240.0,
+        13230.0
+      ]
+    ]
+  },
+  {
+    "reciter": "Saood_ash-Shuraym",
+    "surah": 15,
+    "ayah": 54,
+    "issue": "word outside ayah",
+    "detail": [
+      [
+        2570.0,
+        2560.0
+      ]
+    ]
+  },
+  {
+    "reciter": "Saood_ash-Shuraym",
+    "surah": 17,
+    "ayah": 88,
+    "issue": "word outside ayah",
+    "detail": [
+      [
+        40.0,
+        30.0
+      ]
+    ]
+  },
+  {
+    "reciter": "Saood_ash-Shuraym",
+    "surah": 17,
+    "ayah": 95,
+    "issue": "word outside ayah",
+    "detail": [
+      [
+        110.0,
+        30.0
+      ]
+    ]
+  },
+  {
+    "reciter": "Saood_ash-Shuraym",
+    "surah": 17,
+    "ayah": 100,
+    "issue": "word outside ayah",
+    "detail": [
+      [
+        70.0,
+        30.0
+      ]
+    ]
+  },
+  {
+    "reciter": "Saood_ash-Shuraym",
+    "surah": 23,
+    "ayah": 84,
+    "issue": "word outside ayah",
+    "detail": [
+      [
+        160.0,
+        30.0
+      ]
+    ]
+  },
+  {
+    "reciter": "Saood_ash-Shuraym",
+    "surah": 23,
+    "ayah": 95,
+    "issue": "word outside ayah",
+    "detail": [
+      [
+        1490.0,
+        1480.0
+      ]
+    ]
+  },
+  {
+    "reciter": "Saood_ash-Shuraym",
+    "surah": 24,
+    "ayah": 35,
+    "issue": "word count mismatch",
+    "detail": "47 vs text 48"
+  },
+  {
+    "reciter": "Saood_ash-Shuraym",
+    "surah": 24,
+    "ayah": 64,
+    "issue": "word outside ayah",
+    "detail": [
+      [
+        5330.0,
+        5320.0
+      ]
+    ]
+  },
+  {
+    "reciter": "Saood_ash-Shuraym",
+    "surah": 25,
+    "ayah": 12,
+    "issue": "word outside ayah",
+    "detail": [
+      [
+        1400.0,
+        1390.0
+      ]
+    ]
+  },
+  {
+    "reciter": "Saood_ash-Shuraym",
+    "surah": 28,
+    "ayah": 46,
+    "issue": "word outside ayah",
+    "detail": [
+      [
+        10080.0,
+        10070.0
+      ]
+    ]
+  },
+  {
+    "reciter": "Saood_ash-Shuraym",
+    "surah": 29,
+    "ayah": 38,
+    "issue": "word outside ayah",
+    "detail": [
+      [
+        3890.0,
+        3880.0
+      ]
+    ]
+  },
+  {
+    "reciter": "Saood_ash-Shuraym",
+    "surah": 30,
+    "ayah": 29,
+    "issue": "word outside ayah",
+    "detail": [
+      [
+        10390.0,
+        10380.0
+      ]
+    ]
+  },
+  {
+    "reciter": "Saood_ash-Shuraym",
+    "surah": 32,
+    "ayah": 3,
+    "issue": "word outside ayah",
+    "detail": [
+      [
+        7530.0,
+        7520.0
+      ]
+    ]
+  },
+  {
+    "reciter": "Saood_ash-Shuraym",
+    "surah": 33,
+    "ayah": 28,
+    "issue": "word outside ayah",
+    "detail": [
+      [
+        1840.0,
+        1830.0
+      ]
+    ]
+  },
+  {
+    "reciter": "Saood_ash-Shuraym",
+    "surah": 34,
+    "ayah": 25,
+    "issue": "word outside ayah",
+    "detail": [
+      [
+        100.0,
+        30.0
+      ]
+    ]
+  },
+  {
+    "reciter": "Saood_ash-Shuraym",
+    "surah": 34,
+    "ayah": 30,
+    "issue": "word outside ayah",
+    "detail": [
+      [
+        140.0,
+        30.0
+      ]
+    ]
+  },
+  {
+    "reciter": "Saood_ash-Shuraym",
+    "surah": 34,
+    "ayah": 44,
+    "issue": "word outside ayah",
+    "detail": [
+      [
+        1490.0,
+        1480.0
+      ]
+    ]
+  },
+  {
+    "reciter": "Saood_ash-Shuraym",
+    "surah": 39,
+    "ayah": 44,
+    "issue": "word outside ayah",
+    "detail": [
+      [
+        100.0,
+        30.0
+      ]
+    ]
+  },
+  {
+    "reciter": "Saood_ash-Shuraym",
+    "surah": 45,
+    "ayah": 21,
+    "issue": "word outside ayah",
+    "detail": [
+      [
+        3420.0,
+        3330.0
+      ]
+    ]
+  },
+  {
+    "reciter": "Saood_ash-Shuraym",
+    "surah": 46,
+    "ayah": 26,
+    "issue": "word outside ayah",
+    "detail": [
+      [
+        2640.0,
+        2630.0
+      ]
+    ]
+  },
+  {
+    "reciter": "Saood_ash-Shuraym",
+    "surah": 59,
+    "ayah": 7,
+    "issue": "word outside ayah",
+    "detail": [
+      [
+        60.0,
+        30.0
+      ]
+    ]
+  },
+  {
+    "reciter": "Saood_ash-Shuraym",
+    "surah": 70,
+    "ayah": 31,
+    "issue": "word count mismatch",
+    "detail": "6 vs text 7"
+  },
+  {
+    "reciter": "Saood_ash-Shuraym",
+    "surah": 78,
+    "ayah": 40,
+    "issue": "word count mismatch",
+    "detail": "5 vs text 15"
+  },
+  {
+    "reciter": "Saood_ash-Shuraym",
+    "surah": 91,
+    "ayah": 14,
+    "issue": "word count mismatch",
+    "detail": "2 vs text 7"
+  },
+  {
+    "reciter": "Saood_ash-Shuraym",
+    "surah": 96,
+    "ayah": 7,
+    "issue": "word count mismatch",
+    "detail": "2 vs text 3"
+  }
+]

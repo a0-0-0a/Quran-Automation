@@ -1,0 +1,11 @@
+# Floor material for Onyx001
+texture       = assets/textures/Onyx001.zip
+tile_m        = 1.4
+albedo_gain   = 1.8
+f0            = 0.09
+reflect_rough = 0.04
+gloss_rough   = 0.28
+sharpen       = 0.6
+lod_bias      = -0.35
+vein_gloss    = 0.3
+env_gloss     = 0.0
