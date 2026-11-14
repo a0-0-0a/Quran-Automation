@@ -14,6 +14,9 @@ uploads, and advances the progress record stored in this repo.
    - fetches that range from Backblaze B2 (`reciters/<reciter>/*.opus`), falling
      back to everyayah.com
    - picks a random texture (1K tiles → merged 4K) and a random SFX/seed
+   - **skips any range whose recitation is longer than 2 minutes** (the 60 fps
+     FHD render would not fit the job timeout) and moves to the next range in
+     the same run
    - renders 1080×1920 @ 60 fps, CRF 12, all cores
    - picks a random Arabic title + description (`titling/`)
    - uploads to YouTube (same OAuth method as the old repo)
