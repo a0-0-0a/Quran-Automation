@@ -1,0 +1,98 @@
+[
+  {
+    "index": 0,
+    "b2": "Yasser_Ad-Dussary",
+    "name_en": "Yasser Ad-Dussary",
+    "name_ar": "ياسر الدوسري",
+    "everyayah": "Yasser_Ad-Dussary_128kbps",
+    "timings": "assets/timings_db/Yasser_Ad-Dussary.json"
+  },
+  {
+    "index": 1,
+    "b2": "Abdullaah_3awwaad_Al-Juhaynee",
+    "name_en": "Abdullaah 3awwaad Al-Juhaynee",
+    "name_ar": "عبد الله الجهني",
+    "everyayah": "Abdullaah_3awwaad_Al-Juhaynee_128kbps",
+    "timings": "assets/timings_db/Abdullaah_3awwaad_Al-Juhaynee.json"
+  },
+  {
+    "index": 2,
+    "b2": "Abdurrahmaan_As-Sudais",
+    "name_en": "Sudais",
+    "name_ar": "عبد الرحمن السديس",
+    "everyayah": "Abdurrahmaan_As-Sudais_192kbps",
+    "timings": "assets/timings_db/Abdurrahmaan_As-Sudais.json"
+  },
+  {
+    "index": 3,
+    "b2": "Ahmed_Neana",
+    "name_en": "Ahmed Neana",
+    "name_ar": "أحمد نعينع",
+    "everyayah": "Ahmed_Neana_128kbps",
+    "timings": "assets/timings_db/Ahmed_Neana.json"
+  },
+  {
+    "index": 4,
+    "b2": "Ali_Hajjaj_AlSuesy",
+    "name_en": "Ali Hajjaj AlSuesy",
+    "name_ar": "علي السويسي",
+    "everyayah": "Ali_Hajjaj_AlSuesy_128kbps",
+    "timings": "assets/timings_db/Ali_Hajjaj_AlSuesy.json"
+  },
+  {
+    "index": 5,
+    "b2": "Aziz_Alili",
+    "name_en": "Aziz Alili",
+    "name_ar": "عزيز عليلي",
+    "everyayah": "Aziz_Alili_128kbps",
+    "timings": "assets/timings_db/Aziz_Alili.json"
+  },
+  {
+    "index": 6,
+    "b2": "Minshawy_Murattal",
+    "name_en": "Minshawy Murattal",
+    "name_ar": "محمد صديق المنشاوي",
+    "everyayah": "Minshawy_Murattal_128kbps",
+    "timings": "assets/timings_db/Minshawy_Murattal.json"
+  },
+  {
+    "index": 7,
+    "b2": "Muhsin_Al_Qasim",
+    "name_en": "Muhsin Al-Qasim",
+    "name_ar": "محسن القاسم",
+    "everyayah": "Muhsin_Al_Qasim_192kbps",
+    "timings": "assets/timings_db/Muhsin_Al_Qasim.json"
+  },
+  {
+    "index": 8,
+    "b2": "Nasser_Alqatami",
+    "name_en": "Nasser Alqatami",
+    "name_ar": "ناصر القطامي",
+    "everyayah": "Nasser_Alqatami_128kbps",
+    "timings": "assets/timings_db/Nasser_Alqatami.json"
+  },
+  {
+    "index": 9,
+    "b2": "Sahl_Yassin",
+    "name_en": "Sahl Yassin",
+    "name_ar": "سهل ياسين",
+    "everyayah": "Sahl_Yassin_128kbps",
+    "timings": "assets/timings_db/Sahl_Yassin.json"
+  },
+  {
+    "index": 10,
+    "b2": "Salah_Al_Budair",
+    "name_en": "Salah al-Budair",
+    "name_ar": "صلاح البدير",
+    "everyayah": "Salah_al_Budair_128kbps",
+    "timings": "assets/timings_db/Salah_Al_Budair.json"
+  },
+  {
+    "index": 11,
+    "b2": "Saood_ash-Shuraym",
+    "name_en": "Saud Ash Shuraym",
+    "name_ar": "سعود الشريم",
+    "everyayah": "Saood_ash-Shuraym_128kbps",
+    "timings": "assets/timings_db/Saood_ash-Shuraym.json"
+  }
+]

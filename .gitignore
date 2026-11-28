@@ -1,0 +1,21 @@
+/target
+**/*.rs.bk
+
+# Render outputs
+/short.mp4
+*.video.mp4
+/recitation.wav
+*.mp4
+*.png
+!assets/**/*.png
+
+# Textures: 1K tiles are committed; merged 4K zips are build artifacts
+/assets/textures/*.zip
+/assets/textures/*/_merged.png
+
+# Local caches
+/audio_cache/
+/work/
+/quran_audio/
+/quran_work/
+__pycache__/

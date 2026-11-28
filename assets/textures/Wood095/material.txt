@@ -1,0 +1,11 @@
+# Floor material for Wood095
+texture       = assets/textures/Wood095.zip
+tile_m        = 1.0
+albedo_gain   = 1.0
+f0            = 0.04
+reflect_rough = 0.18
+gloss_rough   = 0.45
+sharpen       = 0.35
+lod_bias      = -0.25
+vein_gloss    = 0.25
+env_gloss     = 0.0

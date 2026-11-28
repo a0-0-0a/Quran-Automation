@@ -1,0 +1,105 @@
+name: Render Quran Short
+
+# Manual preview of one reviewed recit/<n> folder.  Production posting is
+# handled by daily.yml; this workflow never uploads to YouTube.
+on:
+  workflow_dispatch:
+    inputs:
+      folder:
+        description: "Reviewed folder number under recit/ (e.g. 12)"
+        required: true
+        default: "1"
+      texture:
+        description: "Texture folder under assets/textures"
+        required: false
+        default: "green_marble"
+      sfx:
+        description: "Optional SFX path under assets/sfx (empty = no background sound)"
+        required: false
+        default: ""
+      fps:
+        description: "Frames per second"
+        required: false
+        default: "60"
+      width:
+        description: "Frame width"
+        required: false
+        default: "540"
+      height:
+        description: "Frame height"
+        required: false
+        default: "960"
+      crf:
+        description: "x264 CRF (lower = better quality)"
+        required: false
+        default: "18"
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    env:
+      FOLDER: ${{ github.event.inputs.folder }}
+      TEXTURE: ${{ github.event.inputs.texture }}
+      SFX: ${{ github.event.inputs.sfx }}
+      FPS: ${{ github.event.inputs.fps }}
+      WIDTH: ${{ github.event.inputs.width }}
+      HEIGHT: ${{ github.event.inputs.height }}
+      CRF: ${{ github.event.inputs.crf }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Python deps
+        run: pip install -r requirements.txt
+
+      - name: Install ffmpeg
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+
+      - name: Cache cargo
+        uses: Swatinem/rust-cache@v2
+
+      - name: Build
+        run: cargo build --release
+
+      - name: Merge texture tiles (1K -> 4K)
+        run: python3 tools/merge_texture.py --dir "assets/textures/$TEXTURE"
+
+      - name: Download reviewed folder
+        env:
+          B2_AUTH_ID: ${{ secrets.B2_AUTH_ID || secrets.AWS_ACCESS_KEY_ID }}
+          B2_APP_KEY: ${{ secrets.B2_APPLICATION_KEY || secrets.B2_APP_KEY || secrets.AWS_SECRET_ACCESS_KEY }}
+          B2_BUCKET_NAME: ${{ secrets.B2_BUCKET_NAME || secrets.BUCKET_NAME || 'main-one' }}
+        run: |
+          python3 scripts/fetch_short.py \
+            --folder "$FOLDER" \
+            --out "$RUNNER_TEMP/recit/$FOLDER"
+
+      - name: Render
+        run: |
+          SFX_ARG="--no-sfx"
+          if [ -n "$SFX" ]; then SFX_ARG="--sfx $SFX"; fi
+          ./target/release/lumen3d \
+            --short-json "$RUNNER_TEMP/recit/$FOLDER" \
+            --material "assets/textures/$TEXTURE/material.txt" \
+            $SFX_ARG \
+            --fps "$FPS" \
+            --w "$WIDTH" \
+            --h "$HEIGHT" \
+            --crf "$CRF" \
+            --threads 4 \
+            --out short.mp4
+
+      - name: Show result
+        run: ffprobe -v error -show_entries format=duration,size -of default=nw=1 short.mp4
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: quran-short-${{ github.run_id }}
+          path: short.mp4
+          if-no-files-found: error

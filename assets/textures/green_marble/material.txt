@@ -1,0 +1,11 @@
+# Floor material for green_marble
+texture       = assets/textures/green_marble.zip
+tile_m        = 1.4
+albedo_gain   = 2.0
+f0            = 0.08
+reflect_rough = 0.05
+gloss_rough   = 0.32
+sharpen       = 0.6
+lod_bias      = -0.35
+vein_gloss    = 0.35
+env_gloss     = 0.0

@@ -1,0 +1,12 @@
+# Floor material: dark green polished marble (tiles in ./assets/textures/green_marble/)
+# Change these numbers, or point `texture` at another zip, to change the floor. No code changes needed.
+texture       = assets/textures/green_marble.zip   # zip with a .png inside (albedo). Any power-of-two size: 2048 / 4096 / 8192
+tile_m        = 1.4            # metres covered by one texture tile (smaller = finer, more repetition)
+albedo_gain   = 2.0            # brightness of the texture as diffuse colour
+f0            = 0.08           # REFLECTION STRENGTH at normal incidence (polished stone 0.06-0.10, wood 0.03-0.05)
+reflect_rough = 0.05           # sharpness of reflections of the text (0.02 mirror ... 0.3 satin)
+gloss_rough   = 0.32           # roughness of the lamp highlight on the floor
+sharpen       = 0.6            # unsharp mask on the texture at load (0 = off): crisper veins
+lod_bias      = -0.35          # <0 = crisper texture, >0 = softer
+vein_gloss    = 0.35           # texture brightness slightly varies roughness (0 = uniform)
+env_gloss     = 0.0            # faint studio-light reflection in the floor (0 = off, ~0.05 = subtle)
